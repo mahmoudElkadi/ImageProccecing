@@ -1,0 +1,20 @@
+Scripts involved :- 
+format --> to apply prettier options and edit style code
+lint --> to check syntax and provide errors if exist
+build -->to build application and compile to JavaScript
+test --> first to build app and compile it to JS then to test it with jasmine
+start --> starts the app with nodemon
+
+Endpoints involved :-
+http://localhost:3000/api/image?imageName=palmtunnel&width=200&height=500
+this url include name, width and height to resize the image 
+
+Middlewares :-
+in this app there are two middlewares:
+1- valdationImage --> this ensures the data is entered  before processing the image
+2- existImage --> this ensures that this image haven't been processed before
+
+test:-
+1-test the Endpoint
+2-test  image processing
+3-test exist image 
